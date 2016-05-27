@@ -426,6 +426,11 @@
 		}
 	}
 
+	this.startFromJs = function(){
+		interval = true;
+		dequeue();
+	}	
+
 	function initTest(curID){
 		$("<div class='result-item'></div>")
 			.append( testElems[ curID ] )
